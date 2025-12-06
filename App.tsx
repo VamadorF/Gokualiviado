@@ -1,11 +1,9 @@
-'use client'
-
-import React from 'react';
-import { useAppStore } from '../store';
-import { HomeTab, MedicationsTab, HistoryTab, ProfileTab } from '../screens/Tabs';
-import { PainFlow } from '../screens/PainFlow';
-import { Icons } from '../components/Icons';
-import { Button, cn } from '../components/UI';
+import React, { useEffect } from 'react';
+import { useAppStore } from './store';
+import { HomeTab, MedicationsTab, HistoryTab, ProfileTab } from './screens/Tabs';
+import { PainFlow } from './screens/PainFlow';
+import { Icons } from './components/Icons';
+import { Button, cn } from './components/UI';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Auth Screen Component
@@ -78,7 +76,7 @@ const BottomNav = () => {
   );
 };
 
-export default function Home() {
+const App = () => {
   const { currentView, isAuthenticated } = useAppStore();
 
   if (!isAuthenticated) {
@@ -135,5 +133,7 @@ export default function Home() {
       {!isPainFlow && <BottomNav />}
     </div>
   );
-}
+};
+
+export default App;
 

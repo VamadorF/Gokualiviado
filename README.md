@@ -13,8 +13,8 @@ Aplicación completa de gestión de dolor con seguimiento de dolor, adherencia a
 
 ## Tecnologías
 
-- Next.js 15
 - React 19
+- Vite
 - TypeScript
 - Tailwind CSS
 - Zustand (State Management)
@@ -43,8 +43,6 @@ Aplicación completa de gestión de dolor con seguimiento de dolor, adherencia a
    ```
    http://localhost:3000
    ```
-
-   Nota: Next.js usa el puerto 3000 por defecto. Si está ocupado, usará el siguiente disponible.
 
 ## Scripts Disponibles
 
