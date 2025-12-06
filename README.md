@@ -68,6 +68,36 @@ gokualivia/
 
 ```
 
+## Configuración de GitHub
+
+Para crear y subir el repositorio a GitHub:
+
+1. Crea un nuevo repositorio en GitHub (sin inicializar con README, .gitignore o licencia)
+
+2. Conecta el repositorio local con GitHub:
+   ```bash
+   git remote add origin https://github.com/TU_USUARIO/gokualivia.git
+   ```
+
+3. Renombra la rama principal si es necesario:
+   ```bash
+   git branch -M main
+   ```
+
+4. Sube el código:
+   ```bash
+   git push -u origin main
+   ```
+
+## Características Responsive
+
+El proyecto está optimizado para:
+- **Móvil**: Diseño base con ancho máximo móvil
+- **Tablet** (md:): Adaptaciones para pantallas medianas
+- **Escritorio** (lg:): Optimizaciones para pantallas grandes
+
+Todos los componentes se adaptan automáticamente manteniendo el diseño móvil como base.
+
 ## Licencia
 
 Este proyecto es privado.
