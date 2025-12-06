@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import { useAppStore } from '../store';
 import { Button, Card, Label, Slider, cn } from '../components/UI';
