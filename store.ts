@@ -1,3 +1,5 @@
+'use client'
+
 import { create } from 'zustand';
 import { PainEntry, Medication, ViewState, PainLocation, PainQuality, RecommendationLevel } from './types';
 import { mockMedications, mockHistory } from './utils';
