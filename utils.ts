@@ -43,7 +43,7 @@ export const mockMedications: Medication[] = [
 export const mockHistory: PainEntry[] = Array.from({ length: 14 }).map((_, i) => ({
   id: `mock-${i}`,
   date: subDays(new Date(), i),
-  locations: i % 3 === 0 ? [PainLocation.HEAD] : [PainLocation.BACK_LOWER],
+  locations: i % 3 === 0 ? [PainLocation.HEAD_FOREHEAD] : [PainLocation.BACK_LOWER],
   intensity: Math.floor(Math.random() * 5) + 3, // Random 3-8
   quality: [PainQuality.PUNZANTE],
   duration: '2 horas',
